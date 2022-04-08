@@ -32,9 +32,8 @@ func getUsersFromFile() []byte {
 	// read our opened xmlFile as a byte array.
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 
-	fmt.Printf(string(byteValue))
-
 	var users Users
+
 	json.Unmarshal(byteValue, &users)
 
 	// Loop over structs and display them.
