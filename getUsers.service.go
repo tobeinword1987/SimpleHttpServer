@@ -18,7 +18,7 @@ type User struct {
 }
 
 func getUsersFromFile() []byte {
-	// Open our jsonFile
+	// Open jsonFile
 	jsonFile, err := os.Open("users.json")
 	// if we os.Open returns an error then handle it
 	if err != nil {
